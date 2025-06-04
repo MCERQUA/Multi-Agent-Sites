@@ -1,0 +1,74 @@
+---
+layout: base.njk
+title: Home
+---
+
+<section class="hero">
+    <div class="container">
+        <h1>{{ site.tagline }}</h1>
+        <p>From residential renovations to commercial construction, we deliver excellence in every project.</p>
+        <a href="/contact/" class="cta-button">Get Your Free Quote</a>
+    </div>
+</section>
+
+<section class="services-preview">
+    <div class="container">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Residential Construction</h3>
+                <p>Custom homes, renovations, and additions tailored to your lifestyle.</p>
+            </div>
+            <div class="service-card">
+                <h3>Commercial Projects</h3>
+                <p>Office buildings, retail spaces, and industrial facilities.</p>
+            </div>
+            <div class="service-card">
+                <h3>Remodeling & Renovation</h3>
+                <p>Transform your existing space with our expert renovation services.</p>
+            </div>
+        </div>
+        <a href="/services/" class="cta-link">View All Services →</a>
+    </div>
+</section>
+
+<section class="why-choose-us">
+    <div class="container">
+        <h2>Why Choose {{ site.name }}?</h2>
+        <div class="features-grid">
+            <div class="feature">
+                <h3>25+ Years Experience</h3>
+                <p>Decades of expertise in residential and commercial construction.</p>
+            </div>
+            <div class="feature">
+                <h3>Licensed & Insured</h3>
+                <p>Fully licensed, bonded, and insured for your peace of mind.</p>
+            </div>
+            <div class="feature">
+                <h3>Quality Guarantee</h3>
+                <p>We stand behind our work with comprehensive warranties.</p>
+            </div>
+            <div class="feature">
+                <h3>On-Time Delivery</h3>
+                <p>Projects completed on schedule and within budget.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="recent-posts">
+    <div class="container">
+        <h2>Latest from Our Blog</h2>
+        <div class="blog-grid">
+            {% for post in collections.blog | limit(3) %}
+            <article class="blog-card">
+                <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+                <time datetime="{{ post.date | htmlDateString }}">{{ post.date | postDate }}</time>
+                <p>{{ post.data.excerpt }}</p>
+                <a href="{{ post.url }}" class="read-more">Read More →</a>
+            </article>
+            {% endfor %}
+        </div>
+        <a href="/blog/" class="cta-link">View All Posts →</a>
+    </div>
+</section>

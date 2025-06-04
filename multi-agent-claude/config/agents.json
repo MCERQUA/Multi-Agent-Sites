@@ -1,0 +1,36 @@
+{
+  "num_agents": 3,
+  "agent_types": [
+    {
+      "id": "general",
+      "count": 1,
+      "specialization": "Full-stack development",
+      "skills": ["JavaScript", "TypeScript", "Python", "HTML", "CSS", "Node.js", "Eleventy"]
+    },
+    {
+      "id": "frontend",
+      "count": 1,
+      "specialization": "Frontend/UI development",
+      "skills": ["JavaScript", "TypeScript", "CSS", "HTML", "React", "Vue", "Eleventy", "Nunjucks"]
+    },
+    {
+      "id": "backend",
+      "count": 1,
+      "specialization": "Backend/API development",
+      "skills": ["Node.js", "Python", "Rust", "API Design", "Database Integration", "Testing"]
+    }
+  ],
+  "claude_models": ["claude-3-opus-20240229", "claude-3-sonnet-20240229"],
+  "max_concurrent_tasks": 2,
+  "coordination": {
+    "task_assignment_strategy": "load_balanced",
+    "conflict_resolution": "timestamp_based",
+    "communication_interval": 60,
+    "health_check_interval": 300
+  },
+  "resource_limits": {
+    "max_api_calls_per_minute": 20,
+    "max_memory_per_agent": "2GB",
+    "max_cpu_per_agent": "25%"
+  }
+}

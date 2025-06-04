@@ -1,0 +1,26 @@
+{
+  "name": "Santa Valley HVAC",
+  "tagline": "Your Trusted Local HVAC Experts - Cooling, Heating & Air Quality Solutions",
+  "email": "service@santavalleyhvac.com",
+  "phone": "(555) 555-HVAC",
+  "address": "456 Desert Boulevard, Santa Valley, AZ 85024",
+  "social": {
+    "facebook": "https://facebook.com/santavalleyhvac",
+    "twitter": "https://twitter.com/santavalleyhvac",
+    "linkedin": "https://linkedin.com/company/santa-valley-hvac"
+  },
+  "services": {
+    "primary": ["Air Conditioning", "Heating", "Ventilation"],
+    "emergency": "24/7 Emergency Service Available"
+  },
+  "seo": {
+    "description": "Santa Valley HVAC provides expert air conditioning, heating, and ventilation services in Santa Valley, AZ. 24/7 emergency service, licensed & insured. Call (555) 555-HVAC.",
+    "keywords": "HVAC Santa Valley, air conditioning repair Santa Valley, heating service Santa Valley AZ, AC installation, furnace repair, ventilation systems",
+    "localBusiness": {
+      "type": "HVACBusiness",
+      "priceRange": "$$",
+      "areaServed": "Santa Valley, AZ and surrounding areas",
+      "yearsInBusiness": "15+"
+    }
+  }
+}

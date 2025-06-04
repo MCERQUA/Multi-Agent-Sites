@@ -1,0 +1,32 @@
+---
+layout: base.njk
+title: Blog
+description: Construction insights, tips, and project updates from our team
+---
+
+<section class="page-header">
+    <div class="container">
+        <h1>Construction Blog</h1>
+        <p>Insights, tips, and updates from the construction industry</p>
+    </div>
+</section>
+
+<section class="blog-listing">
+    <div class="container">
+        <div class="blog-grid">
+            {% for post in collections.blog %}
+            <article class="blog-card">
+                <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+                <div class="post-meta">
+                    <time datetime="{{ post.date | htmlDateString }}">{{ post.date | postDate }}</time>
+                    {% if post.data.author %}
+                    <span class="author">by {{ post.data.author }}</span>
+                    {% endif %}
+                </div>
+                <p>{{ post.data.excerpt }}</p>
+                <a href="{{ post.url }}" class="read-more">Read More →</a>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>

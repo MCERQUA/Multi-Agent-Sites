@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title or (site.name + ' - HVAC Services in Santa Valley AZ') }}</title>
+    <meta name="description" content="{{ description or site.seo.description }}">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="{{ site.seo.keywords }}">
+    <meta name="author" content="{{ site.name }}">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://santavalleyhvac.com{{ page.url }}">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ title or site.name }}">
+    <meta property="og:description" content="{{ description or site.seo.description }}">
+    <meta property="og:url" content="https://santavalleyhvac.com{{ page.url }}">
+    <meta property="og:site_name" content="{{ site.name }}">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="{{ title or site.name }}">
+    <meta property="twitter:description" content="{{ description or site.seo.description }}">
+    
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HVACBusiness",
+        "name": "{{ site.name }}",
+        "description": "{{ site.seo.description }}",
+        "url": "https://santavalleyhvac.com",
+        "telephone": "{{ site.phone }}",
+        "email": "{{ site.email }}",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "456 Desert Boulevard",
+            "addressLocality": "Santa Valley",
+            "addressRegion": "AZ",
+            "postalCode": "85024",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "33.5",
+            "longitude": "-111.9"
+        },
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "08:00",
+                "closes": "18:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Saturday"],
+                "opens": "09:00",
+                "closes": "17:00"
+            }
+        ],
+        "areaServed": {
+            "@type": "City",
+            "name": "Santa Valley"
+        },
+        "priceRange": "$$",
+        "paymentAccepted": ["Cash", "Credit Card", "Check"],
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "HVAC Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Air Conditioning Repair & Installation"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Heating System Repair & Installation"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Ventilation System Services"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+    
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="/" aria-label="{{ site.name }} Home">{{ site.name }}</a>
+                </div>
+                <nav class="main-nav" aria-label="Main navigation">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about/">About</a></li>
+                        <li><a href="/services/">Services</a></li>
+                        <li><a href="/projects/">Projects</a></li>
+                        <li><a href="/blog/">Blog</a></li>
+                        <li><a href="/contact/" class="cta-button">Get Free Quote</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        {{ content | safe }}
+    </main>
+
+    <!-- Service Areas Section -->
+    <section class="service-areas">
+        <div class="container">
+            <h2>Proudly Serving Santa Valley and Surrounding Areas</h2>
+            <div class="areas-list">
+                <span class="area-tag">Santa Valley</span>
+                <span class="area-tag">Phoenix</span>
+                <span class="area-tag">Scottsdale</span>
+                <span class="area-tag">Tempe</span>
+                <span class="area-tag">Mesa</span>
+                <span class="area-tag">Chandler</span>
+                <span class="area-tag">Gilbert</span>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>{{ site.name }}</h3>
+                    <p>{{ site.tagline }}</p>
+                    <div class="social-links">
+                        <a href="{{ site.social.facebook }}" aria-label="Facebook" target="_blank" rel="noopener">
+                            <span>f</span>
+                        </a>
+                        <a href="{{ site.social.twitter }}" aria-label="Twitter" target="_blank" rel="noopener">
+                            <span>t</span>
+                        </a>
+                        <a href="{{ site.social.linkedin }}" aria-label="LinkedIn" target="_blank" rel="noopener">
+                            <span>in</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div>
+                                <strong>24/7 Emergency:</strong><br>
+                                <a href="tel:{{ site.phone }}">{{ site.phone }}</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">✉️</div>
+                            <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <address>{{ site.address }}</address>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="/services/#air-conditioning">Air Conditioning</a></li>
+                        <li><a href="/services/#heating">Heating Systems</a></li>
+                        <li><a href="/services/#ventilation">Ventilation</a></li>
+                        <li><a href="/services/#maintenance">Preventive Maintenance</a></li>
+                        <li><a href="/services/#emergency">24/7 Emergency Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="/contact/">Get Free Quote</a></li>
+                        <li><a href="/financing/">Financing Options</a></li>
+                        <li><a href="/testimonials/">Customer Reviews</a></li>
+                        <li><a href="/blog/">HVAC Tips & News</a></li>
+                        <li><a href="/warranty/">Warranty Information</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; {{ site.name }} {% set year = 2025 %}{{ year }}. All rights reserved. | Licensed & Insured | ROC #123456</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- SEO Hidden Content -->
+    <div class="seo-content">
+        <h1>HVAC Services Santa Valley AZ - Air Conditioning and Heating Repair</h1>
+        <p>Professional HVAC contractor serving Santa Valley, Arizona with AC repair, heating installation, and ventilation services. Call for 24/7 emergency service.</p>
+    </div>
+</body>
+</html>

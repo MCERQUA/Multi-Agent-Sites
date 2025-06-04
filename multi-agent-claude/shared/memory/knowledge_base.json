@@ -1,0 +1,17 @@
+{
+  "patterns": {
+    "eleventy_blog": {
+      "structure": "src/blog/*.md",
+      "frontmatter": [
+        "title",
+        "date",
+        "author",
+        "excerpt",
+        "tags"
+      ]
+    }
+  },
+  "solutions": {},
+  "errors_encountered": {},
+  "best_practices": {}
+}

@@ -1,0 +1,9 @@
+[build]
+  publish = "_site"
+  command = "npm run build"
+
+[[plugins]]
+  package = "@netlify/plugin-lighthouse"
+
+[build.environment]
+  NODE_VERSION = "18"

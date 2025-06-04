@@ -1,0 +1,11 @@
+[
+  {
+    "timestamp": "2025-06-04T17:14:27.594876",
+    "check": {
+      "timestamp": "2025-06-04T17:14:27.594751",
+      "success": false,
+      "error": "No Cargo.toml found in /mnt/e/1-ECHO-WORKING-FOLDER/CC-NEW/multi-agent-claude"
+    },
+    "test": null
+  }
+]

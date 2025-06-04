@@ -1,0 +1,60 @@
+{
+  "project_type": "web_development",
+  "current_phase": null,
+  "tech_stack": [
+    "Eleventy",
+    "Node.js",
+    "CSS"
+  ],
+  "dependencies": {},
+  "file_structure": {},
+  "last_updated": "2025-06-04T18:03:24.600494",
+  "session_start": "2025-06-04T18:03:24.235569",
+  "main_task": "Convert the template website in /Websites/santanvalleyhvac folder into a modern highly styled website for Santa Valley HVAC. Ensure the website has all SEO aspects setup for lead generation in Santa Valley, USA. The website should be optimized for HVAC services including air conditioning, heating, and ventilation services.",
+  "num_agents": 3,
+  "agent_types": [
+    {
+      "id": "general",
+      "count": 1,
+      "specialization": "Full-stack development",
+      "skills": [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "HTML",
+        "CSS",
+        "Node.js",
+        "Eleventy"
+      ]
+    },
+    {
+      "id": "frontend",
+      "count": 1,
+      "specialization": "Frontend/UI development",
+      "skills": [
+        "JavaScript",
+        "TypeScript",
+        "CSS",
+        "HTML",
+        "React",
+        "Vue",
+        "Eleventy",
+        "Nunjucks"
+      ]
+    },
+    {
+      "id": "backend",
+      "count": 1,
+      "specialization": "Backend/API development",
+      "skills": [
+        "Node.js",
+        "Python",
+        "Rust",
+        "API Design",
+        "Database Integration",
+        "Testing"
+      ]
+    }
+  ],
+  "eigencode_available": false
+}

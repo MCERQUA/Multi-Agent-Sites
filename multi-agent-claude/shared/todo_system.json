@@ -1,0 +1,63 @@
+{
+  "tasks": [
+    {
+      "id": "task_1",
+      "description": "Analyze project requirements and existing codebase",
+      "type": "analysis",
+      "priority": "high",
+      "status": "pending",
+      "assigned_to": null,
+      "created_at": "2025-06-04T18:03:24.248316"
+    },
+    {
+      "id": "task_2",
+      "description": "Set up development environment",
+      "type": "setup",
+      "priority": "high",
+      "status": "pending",
+      "assigned_to": null,
+      "created_at": "2025-06-04T18:03:24.248335"
+    },
+    {
+      "id": "task_3",
+      "description": "Design component architecture",
+      "type": "frontend",
+      "priority": "medium",
+      "status": "pending",
+      "assigned_to": null,
+      "created_at": "2025-06-04T18:03:24.248338"
+    },
+    {
+      "id": "task_4",
+      "description": "Implement responsive UI components",
+      "type": "frontend",
+      "priority": "medium",
+      "status": "pending",
+      "assigned_to": null,
+      "created_at": "2025-06-04T18:03:24.248341"
+    },
+    {
+      "id": "task_5",
+      "description": "Configure build and deployment",
+      "type": "devops",
+      "priority": "low",
+      "status": "pending",
+      "assigned_to": null,
+      "created_at": "2025-06-04T18:03:24.248343"
+    }
+  ],
+  "claimed_tasks": {
+    "task_1": {
+      "agent_id": "general_agent_0",
+      "claimed_at": "2025-06-04T18:03:24.670429"
+    },
+    "task_2": {
+      "agent_id": "frontend_agent_0",
+      "claimed_at": "2025-06-04T18:03:24.686855"
+    },
+    "task_3": {
+      "agent_id": "backend_agent_0",
+      "claimed_at": "2025-06-04T18:03:24.705420"
+    }
+  }
+}

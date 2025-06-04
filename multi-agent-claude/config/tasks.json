@@ -1,0 +1,110 @@
+{
+  "web_development": {
+    "frontend_tasks": [
+      {
+        "name": "Create React components",
+        "complexity": "medium",
+        "estimated_time": "2-4 hours",
+        "required_skills": ["React", "JavaScript", "CSS"]
+      },
+      {
+        "name": "Implement responsive design",
+        "complexity": "medium",
+        "estimated_time": "3-5 hours",
+        "required_skills": ["CSS", "HTML", "Responsive Design"]
+      },
+      {
+        "name": "Add state management",
+        "complexity": "high",
+        "estimated_time": "4-6 hours",
+        "required_skills": ["React", "Redux", "State Management"]
+      },
+      {
+        "name": "Optimize performance",
+        "complexity": "high",
+        "estimated_time": "3-5 hours",
+        "required_skills": ["React", "Performance Optimization", "Profiling"]
+      }
+    ],
+    "backend_tasks": [
+      {
+        "name": "Design API endpoints",
+        "complexity": "medium",
+        "estimated_time": "2-3 hours",
+        "required_skills": ["API Design", "REST", "GraphQL"]
+      },
+      {
+        "name": "Implement authentication",
+        "complexity": "high",
+        "estimated_time": "4-6 hours",
+        "required_skills": ["Security", "JWT", "OAuth"]
+      },
+      {
+        "name": "Database integration",
+        "complexity": "medium",
+        "estimated_time": "3-4 hours",
+        "required_skills": ["Database", "ORM", "SQL"]
+      },
+      {
+        "name": "Add error handling",
+        "complexity": "low",
+        "estimated_time": "2-3 hours",
+        "required_skills": ["Error Handling", "Logging"]
+      }
+    ],
+    "general_tasks": [
+      {
+        "name": "Write documentation",
+        "complexity": "low",
+        "estimated_time": "2-3 hours",
+        "required_skills": ["Technical Writing", "Markdown"]
+      },
+      {
+        "name": "Create tests",
+        "complexity": "medium",
+        "estimated_time": "3-4 hours",
+        "required_skills": ["Testing", "TDD", "Test Frameworks"]
+      },
+      {
+        "name": "Code review",
+        "complexity": "medium",
+        "estimated_time": "1-2 hours",
+        "required_skills": ["Code Review", "Best Practices"]
+      },
+      {
+        "name": "Performance optimization",
+        "complexity": "high",
+        "estimated_time": "4-6 hours",
+        "required_skills": ["Profiling", "Optimization", "Performance"]
+      }
+    ]
+  },
+  "rust_development": {
+    "core_tasks": [
+      {
+        "name": "Design module structure",
+        "complexity": "medium",
+        "estimated_time": "2-3 hours",
+        "required_skills": ["Rust", "Architecture", "Module Design"]
+      },
+      {
+        "name": "Implement core functionality",
+        "complexity": "high",
+        "estimated_time": "6-8 hours",
+        "required_skills": ["Rust", "Systems Programming"]
+      },
+      {
+        "name": "Add error handling",
+        "complexity": "medium",
+        "estimated_time": "3-4 hours",
+        "required_skills": ["Rust", "Error Handling", "Result Type"]
+      },
+      {
+        "name": "Write unit tests",
+        "complexity": "medium",
+        "estimated_time": "3-4 hours",
+        "required_skills": ["Rust", "Testing", "cargo test"]
+      }
+    ]
+  }
+}

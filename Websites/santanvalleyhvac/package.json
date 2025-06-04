@@ -1,0 +1,14 @@
+{
+  "name": "contractor-website",
+  "version": "1.0.0",
+  "description": "A professional website for a local contracting company with blog",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-plugin-rss": "^1.2.0",
+    "luxon": "^3.4.4"
+  }
+}

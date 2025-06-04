@@ -1,0 +1,69 @@
+{
+  "mcpServers": {
+    "obsidian": {
+      "enabled": true,
+      "command": "mcp-server-obsidian",
+      "args": ["--vault-path", "/mnt/e/1-ECHO-WORKING-FOLDER/CC-NEW/obsidian-vault"],
+      "features": ["read_notes", "write_notes", "search"],
+      "permissions": {
+        "read": true,
+        "write": true,
+        "delete": false
+      }
+    },
+    "git": {
+      "enabled": true,
+      "command": "mcp-server-git",
+      "args": ["--repository", "/mnt/e/1-ECHO-WORKING-FOLDER/CC-NEW"],
+      "features": ["commit", "branch", "status", "diff"],
+      "permissions": {
+        "read": true,
+        "write": true,
+        "push": false
+      }
+    },
+    "github": {
+      "enabled": true,
+      "command": "mcp-server-github",
+      "env": {
+        "GITHUB_TOKEN": "ghp_your_token_here"
+      },
+      "features": ["issues", "pull_requests", "repos"],
+      "permissions": {
+        "read": true,
+        "write": true,
+        "admin": false
+      }
+    },
+    "filesystem": {
+      "enabled": true,
+      "command": "mcp-server-filesystem",
+      "args": ["--allowed-directory", "/mnt/e/1-ECHO-WORKING-FOLDER/CC-NEW"],
+      "features": ["read", "write", "list", "search"],
+      "permissions": {
+        "read": true,
+        "write": true,
+        "execute": false
+      }
+    }
+  },
+  "integration": {
+    "auto_connect": true,
+    "retry_attempts": 3,
+    "connection_timeout": 30,
+    "health_check_interval": 300
+  },
+  "security": {
+    "sandbox_mode": true,
+    "allowed_paths": [
+      "/mnt/e/1-ECHO-WORKING-FOLDER/CC-NEW",
+      "/mnt/e/1-ECHO-WORKING-FOLDER/CC-NEW/obsidian-vault"
+    ],
+    "blocked_paths": [
+      "/etc",
+      "/usr",
+      "/bin",
+      "/sbin"
+    ]
+  }
+}
